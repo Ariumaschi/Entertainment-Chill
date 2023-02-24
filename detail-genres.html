@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Indicamos que se pueda usar caracteres especiales como tildes o la ñ-->
+    <meta charset="UTF-8">
+
+    <!--Utilizamos estas etiquetas a continuación para lograr una página responsive-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linkeamos con la hoja de CSS para poder darle el estilo que deseamos-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Usamos la etiqueta title para ponerle un nombre en la solapa arriba de todo -->
+    <title> Detalle de géneros </title>
+</head>
+
+<body>
+
+    <!-- Comienzo encabezado -->
+
+    <header id="header">
+
+        <div class="div-logo-header">
+            <img class="logo" src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="div-lista-header">
+            <ul>
+                <li><a href="index.html"> HOME </a></li>
+
+                <li><a href="Favoritos.html"> FAVORITOS </a></li>
+
+                <li><a href="genres.html"> GÉNEROS </a></li>
+            </ul>
+        </div>
+
+        <div class="formulario-header">
+            <form action="./Resultados-de-búsqueda.html" method="GET">
+                <input class="buscador-form" type="radio" name="media" value="all" checked>
+                <label for="">Todo</label>
+                <input class="buscador-form" type="radio" name="media" value="movies">
+                <label for=""> Peliculas </label>
+                <input class="buscador-form" type="radio" name="media" value="series">
+                <label for=""> Series </label>
+
+
+                <input id="Buscador" class="search" type="text" name="buscador" placeholder="Buscar">
+                <button type="submit"> <img src="./img/lupa.jpg" alt="Imagen lupa"> </button>
+                <p class="message"></p>
+            </form>
+        </div>
+
+    </header>
+
+    <!--fin encabezado -->
+
+    <main class="main-detailgeners">
+
+        <h1 class="padre-detailgeners">Terror</h1>
+
+        <!-- Comienzo peliculas de terror -->
+        <section class="section-detailgeners">
+
+            <h2>Películas</h2>
+
+            <div class="div-detailgeners">
+                <!--  <article class="article-detailgeners">
+                    <h4>El Exorcista</h4>
+                    <img src="./img/elExorcista.jpg" alt="Portada El Extorcista">
+                </article>
+                
+                <article class="article-detailgeners">
+                    <h4>El Resplandor</h4>
+                    <img src="./img/elResplandor.jpg" alt="Portada El Resplandor">
+                </article>
+                
+                <article class="article-detailgeners">
+                    <h4>La Profecía</h4>
+                    <img src="./img/laProfecia.jpg" alt="Portada La Profecía">
+                </article>
+                
+                <article class="article-detailgeners">
+                    <h4>Host</h4>
+                    <img src="./img/host.jpg" alt="Portada Host">
+                </article>  -->
+            </div>
+        </section>
+
+        <!-- Fin peliculas-->
+
+        <!-- Comienzo series de terror-->
+
+        <section class="section-detailgenersSeries">
+
+            <h2>Series</2>
+
+                <div class="div-detailgeners2">
+                    <!--   <article class="article-detailgeners">
+                        <h4>La maldición de Hill House</h4>
+                        <img src="./img/laMaldicionDeHillHouse.jpg" alt="Portada La Maldicion De Hill House">
+                    </article>
+
+                    <article class="article-detailgeners">
+                        <h4>The Purge</h4>
+                        <img src="./img/thePurge.jpg" alt="Portada The Purge">
+                    </article>
+
+                    <article class="article-detailgeners">
+                        <h4>The Walking Dead</h4>
+                        <img src="./img/theWalkingDead.jpg" alt="Portada The Walking Dead">
+                    </article>
+
+                    <article class="article-detailgeners">
+                        <h4>The Terror Infamy</h4>
+                        <img src="./img/theTerrorInfamy.jpg" alt="Portada The Terror Infamy">
+                    </article>-->
+                </div>
+        </section>
+
+        <!-- Fin series-->
+
+    </main>
+
+    <!--------------------------------------Comienzo pie de página -------------------------------------->
+    <footer>
+
+        <div class="div-logo-footer">
+            <img class="logo-footer" src="./img/logo.jpg" alt="Logo">
+            <img class="tmdb" src="./img/tmdb.png" alt="TMDB logo">
+        </div>
+
+        <div class="integrantes">
+            <ul>
+                <li><a href="https://github.com/Carolejdin" target="_blank"> Carol Ejdin </a></li>
+
+                <li><a href="https://github.com/Ariumaschi" target="_blank"> Ariana Umaschi </a></li>
+
+                <li><a href="https://github.com/solanabiblos" target="_blank"> Solana Biblos </a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!--------------------------------------Fin del Footer-------------------------------------->
+    <script src="./js/detailGenre.js" type="text/javascript"></script>
+
+</body>
+<!--------------------------------------Fin Body -------------------------------------->
+<script src="./js/header.js"></script>
+
+</html>

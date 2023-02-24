@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Indicamos que se pueda usar caracteres especiales como tildes o la ñ-->
+    <meta charset="UTF-8">
+
+    <!--Utilizamos estas etiquetas a continuación para lograr una página responsive-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linkeamos con la hoja de CSS para poder darle el estilo que deseamos-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Usamos la etiqueta title para ponerle un nombre en la solapa arriba de todo -->
+    <title> Favoritos </title>
+</head>
+
+<body>
+    <!-- Comienzo encabezado-->
+
+    <header id="header">
+
+        <div class="div-logo-header">
+            <img class="logo" src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="div-lista-header">
+            <ul>
+                <li><a href="index.html"> HOME </a></li>
+
+                <li><a href="Favoritos.html"> FAVORITOS </a></li>
+
+                <li><a href="genres.html"> GÉNEROS </a></li>
+            </ul>
+        </div>
+
+        <div class="formulario-header">
+            <form action="./Resultados-de-búsqueda.html" method="GET">
+                <input class="buscador-form" type="radio" name="media" value="all" checked>
+                <label for="">Todo</label>
+                <input class="buscador-form" type="radio" name="media" value="movies">
+                <label for=""> Peliculas </label>
+                <input class="buscador-form" type="radio" name="media" value="series">
+                <label for=""> Series </label>
+
+
+                <input id="Buscador" class="search" type="text" name="buscador" placeholder="Buscar">
+                <button type="submit"> <img src="./img/lupa.jpg" alt="Imagen lupa"> </button>
+                <p class="message"></p>
+            </form>
+        </div>
+
+    </header>
+    <!-- Fin encabezado -->
+
+    <!-- Comienzo primer div -->
+
+    <main class="main-favoritos">
+        <section class="section-favoritos">
+            <h1> Mis favoritos </h1>
+
+
+            <h2> Peliculas favoritas </h2>
+            <div class="mis-favoritos-pelis">
+
+
+                <!--  <ul class="ul-favoritos">
+                    <li class="favscuadrado">
+                        <h3> Ratatouille </h3>
+                        <img class="imgfavs" src="./img/ratatouille.jpg" alt="Imagen Ratatouille">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Orgullo y prejuicio </h3>
+                        <img class="imgfavs" src="./img/orgulloYPrejuicio.jpg" alt="Imagen Orgullo y prejuicio">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> El origen </h3>
+                        <img class="imgfavs" src="./img/elOrigen.jpg" alt="Imagen El origen">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Black Widow </h3>
+                        <img class="imgfavs" src="./img/blackWidow.png" alt="Imagen Black Widow">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Friends </h3>
+                        <img class="imgfavs" src="./img/friends.jpg" alt="Imagen Friends">
+                    </li>
+                </ul> -->
+
+            </div>
+
+            <!-- Comienzo segundo div -->
+
+            <h2> Series favoritas </h2>
+            <div class="mis-favoritos-series">
+
+                <!--  <ul class="ul-favoritos">
+                    <li class="favscuadrado">
+                        <h3> Elite </h3>
+                        <img class="imgfavs" src="./img/elite.jpg" alt="Imagen Elite">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Escuela Nocturna</h3>
+                        <img class="imgfavs" src="./img/escuelaNocturna.jpg" alt="Imagen Escuela Nocturna">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Brooklyn 99 </h3>
+                        <img class="imgfavs" src="./img/brooklyn99.jpeg"
+                            alt="Imagen Brooklyn 99">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Mi Abuela Es <br> Un Peligro 3 </h3>
+                        <img class="imgfavs" src="./img/miAbuelaEsUnPeligro3.jpg"
+                            alt="Imagen Mi Abuela Es Un Peligro 3 ">
+                    </li>
+
+                    <li class="favscuadrado">
+                        <h3> Atypical </h3>
+                        <img class="imgfavs" src="./img/atypical.jpg" alt="Imagen Atypical">
+                    </li>
+                </ul> -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--------------------------------------Fin Body -------------------------------------->
+    <!--------------------------------------Comienzo footer -------------------------------------->
+    <footer>
+
+        <div class="div-logo-footer">
+            <img class="logo-footer" src="./img/logo.jpg" alt="Logo">
+            <img class="tmdb" src="./img/tmdb.png" alt="TMDB logo">
+        </div>
+
+        <div class="integrantes">
+            <ul>
+                <li><a href="https://github.com/Carolejdin" target="_blank"> Carol Ejdin </a></li>
+
+                <li><a href="https://github.com/Ariumaschi" target="_blank"> Ariana Umaschi </a></li>
+
+                <li><a href="https://github.com/solanabiblos" target="_blank"> Solana Biblos </a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!--------------------------------------Fin del Footer-------------------------------------->
+    <script src="./js/favoritos.js" type="text/javascript"></script>
+</body>
+<script src="./js/header.js"></script>
+
+</html>
